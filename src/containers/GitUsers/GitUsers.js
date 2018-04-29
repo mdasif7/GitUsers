@@ -22,15 +22,15 @@ class GitUsers extends Component {
         .then((response)=>response.json())
         .then((res=>
         {
-            console.log("YO",res);
+            
             this.props.onGitusers(res);
             
         }) 
     )}
     loadMore(){
-        console.log("previous state", this.state.page);
+        
         this.setState((prevState) => {return {page: prevState.page + 1}});
-        console.log("previous state", this.state.page);
+        
         this.fetchData(++this.page);
     }
     render() { 
