@@ -39,8 +39,9 @@ class GitUser extends Component {
                 </div>
                 <div className={classes.Flow}>
                 
-                    <p> &hearts;<span>
-                    {followers}</span></p>
+                    <p> &hearts;
+                        <span>{followers}</span>
+                    </p>
                 </div>
                 
 
